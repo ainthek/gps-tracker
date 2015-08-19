@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+    <label>Phone #
+        <input id="phone" type="tel" autocomplete="on">
+    </label>
+    <label>Password
+        <input id="pwd" type="password">
+    </label>
+    <a id="begin">Begin</a>
+    <a id="loc">Location</a>
+    <fieldset>
+        <legend>Auto Tracking</legend>
+        <form id="autotracking">
+            <label>Every
+                <input name="every" value="030">
+            </label>
+            <label>Repeat
+                <input name="times" value="005">
+            </label>
+            <input id="autotrackingon" type="submit" value="On">
+            <input id="autotrackingoff" type="submit" value="Off">
+        </form>
+    </fieldset>
+    <script>
+    // TODO: some templating for links building
+    // and include also text msg format
+    phone.onchange = pwd.onchange = rebuildHrefs;
+
+    autotracking.onsubmit = function() {
+        // a) problem with ? at the end, 
+        // autotracking.action = "sms:" + phone.value + "&body=" + "t" + every.value + "s" + times.value + "n" + pwd.value;
+        // b) this seems to work
+        window.location.href="sms:" + phone.value + "&body=" + "t" + autotracking.every.value + "s" + autotracking.times.value + "n" + pwd.value;
+        return false;
+    }
+
+    function rebuildHrefs() {
+        begin.href = "sms:" + phone.value + "&body=" + "begin" + pwd.value;
+        loc.href = "tel:" + phone.value;
+
+    }
+    </script>
+</body>
+
+</html>
