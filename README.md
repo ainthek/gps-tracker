@@ -37,21 +37,6 @@ as in manual, just rewritten to different syntax:
 
 
 
-On:
-
-a)
-	10 times 
-
-b)
-	
-
-
-Off:
-
-	
-
-
-
 
 
 
