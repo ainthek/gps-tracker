@@ -11,4 +11,51 @@ It seems like you don't need  mobile apps [like this](http://www.starburstsoftwa
 
 Instead let's build simple [interactive manual](http://ainthek.github.io/gps-tracker/www/index.html) ;-)
 
+## Commands
+
+as in manual, just rewritten to different syntax: 
+
+
+
+	begin{password}								# 5.4 Initialization
+	password{old-password} {new-password} 		# 5.5 Change the password
+	admin{password} {phone-admin}				# 5.6 Authorization - add
+	'call' {phone-device}						# 5.6 Authorization - add (another option)
+	noadmin{password} {phone-admin}				# 5.6 Authorization - delete
+	'call' {phone-device}						# 5.7 Single Location
+	address{password}							# 5.8 Street Address			
+	t{ttt}{u}{nnn}n{password}					# 5.9.1 Auto Track On, send message each {ttt} seconds, minutes, hours (s,m,h) {u}, send {nnn} messages
+	t{ttt}{u}***n{password}						# 5.9.2 Auto Track On, send message each {ttt} seconds, minutes, hours (s,m,h) {u}, forever
+	notn{password}								# 5.9.2 Auto Track Off
+	monitor{password}							# 5.11 Monitor On (Voice Surveillance)
+	tracker{password}							# 5.11.4 Monitor Off, back to tracker mode
+	
+
+
+
+	
+
+
+
+On:
+
+a)
+	10 times 
+
+b)
+	
+
+
+Off:
+
+	
+
+
+
+
+
+
+	
+	
+
 
