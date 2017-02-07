@@ -2,6 +2,8 @@
 
 A simple UI for this:
 
+## Model 1
+
 ![Unknown GPS Tracker](./doc/device.jpg)
 
 Which is probably one of these 
@@ -30,9 +32,29 @@ as in manual, just rewritten to different syntax:
 	monitor{password}							# 5.11 Monitor On (Voice Surveillance)
 	tracker{password}							# 5.11.4 Monitor Off, back to tracker mode
 	
+## Model 2 (Bicycle Tracker GPS305, TK305)
 
+Bought from here
 
+<http://cgi.ebay.com/ws/eBayISAPI.dll?ViewItemVersion&item=281901546461&view=all&tid=1623772592018>
 
+![Unknown GPS Tracker](./doc/device2.jpg)
+
+Battery Life Tests
+
+- Mode - Sleep By Shock Sensor - 6 days (only!), almost no shocks, few messages
+- Mode - bicycle 1 - TODO
+- Mode - bicycle 2 - TODO
+- Mode - Scheduled wake-up - ARM - TODO
+- Mode - Scheduled wake-up - DISARM - TODO
+
+Other:
+
+- very bad plastic, hard to open, hard to close, hard to mount
+- rubber seal broken after first mount/dismount
+- charging outside of bike is nonsense, why not having connector and charge without dismounting ?  
+
+My overview of modes can be found here: <./doc/modes.xlsx>
 	
 
 
