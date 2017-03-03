@@ -42,8 +42,8 @@ Bought from here
 
 Battery Life Tests
 
-- Mode - Sleep By Shock Sensor - 6 days (only!), almost no shocks, few messages
-- Mode - bicycle 1 - TODO
+- Mode - Sleep By Shock Sensor - 6 days (only!), warm room, about 5 shocks, few "check" messages
+- Mode - bicycle 1 - 14 says, warm room, no shock, no calls, no command messages
 - Mode - bicycle 2 - TODO
 - Mode - Scheduled wake-up - ARM - TODO
 - Mode - Scheduled wake-up - DISARM - TODO
